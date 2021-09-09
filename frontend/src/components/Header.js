@@ -12,8 +12,8 @@ const Header = () => {
               <img
                 alt="onLion logo"
                 src="/logo.png"
-                width="80"
-                height="80"
+                width="60"
+                height="60"
                 className="d-inline-block align-middle"
               />{" "}
               onLion store
