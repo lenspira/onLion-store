@@ -8,7 +8,17 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>onLion</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                alt="onLion logo"
+                src="/logo.png"
+                width="80"
+                height="80"
+                className="d-inline-block align-middle"
+              />{" "}
+              onLion store
+            </Navbar.Brand>
+            {/* <Navbar.Brand>onLion</Navbar.Brand> */}
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
