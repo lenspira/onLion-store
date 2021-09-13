@@ -54,7 +54,7 @@ const ProfileScreen = ({ location, history }) => {
         {success && <Message variant="success">Profile Updated</Message>}
         {loading && <Loader />}
         <Form onSubmit={submitHandler}>
-          <Form.Group controlId="Name" className="pb-3">
+          <Form.Group controlId="name" className="pb-3">
             <Form.Label>Name</Form.Label>
             <Form.Control
               type="name"
