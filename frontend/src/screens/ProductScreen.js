@@ -62,10 +62,10 @@ const ProductScreen = ({ history, match }) => {
         <>
           <Meta title={product.name} />
           <Row>
-            <Col md={6}>
+            <Col md={6} className="product-page-section">
               <Image src={product.image} alt={product.name} fluid></Image>
             </Col>
-            <Col md={3}>
+            <Col md={3} className="product-page-section">
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
@@ -77,29 +77,31 @@ const ProductScreen = ({ history, match }) => {
                 <ListGroup.Item>Description: {product.description}</ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col md={3}>
+            <Col md={3} className="product-page-section">
               <Card>
                 <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
-                      <Col>Price:</Col>
-                      <Col>
+                      <Col className="product-page-section">Price:</Col>
+                      <Col className="product-page-section">
                         <strong>${product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
-                      <Col>Status:</Col>
-                      <Col>{product.countInStock > 0 ? "In Stock" : "Out of Stock"}</Col>
+                      <Col className="product-page-section">Status:</Col>
+                      <Col className="product-page-section">
+                        {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                      </Col>
                     </Row>
                   </ListGroup.Item>
 
                   {product.countInStock > 0 && (
                     <ListGroupItem>
                       <Row>
-                        <Col>Qty:</Col>
-                        <Col>
+                        <Col className="product-page-section">Qty:</Col>
+                        <Col className="product-page-section">
                           <Form.Control
                             as="select"
                             value={qty}
@@ -130,7 +132,7 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           </Row>
           <Row className="mt-4">
-            <Col md={6}>
+            <Col className="product-page-section" md={6}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No reviews</Message>}
               <ListGroup variant="flush">
