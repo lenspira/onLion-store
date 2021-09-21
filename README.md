@@ -16,6 +16,9 @@
 * PayPal / credit card integration
 * Database seeder (products & users)
 
+# Known Issues
+* After a customer buys a product, the stock of that product does not get updated in the database, nor in the admin product management section.
+
 # Usage
 ## ES Modules in Node
 This project uses ECMAScript Modules in the backend. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
@@ -85,9 +88,9 @@ asmith@example.com (Customer)
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
 # Links
-* Project homepage:
-* Repository: 
-* Issue tracker: 
+* Project homepage: https://onlionstore.herokuapp.com/
+* Repository: https://github.com/lenspira/onLion-store
+* Issue tracker: https://github.com/lenspira/onLion-store/issues
 
 # License
 The code in this project is licensed under MIT license.
