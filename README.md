@@ -84,15 +84,15 @@ asmith@example.com (Customer)
 123456
 ```
 
-## Contributing
+# Contributing
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-## Links
+# Links
 * Project homepage: https://onlionstore.herokuapp.com/
 * Repository: https://github.com/lenspira/onLion-store
 * Issue tracker: https://github.com/lenspira/onLion-store/issues
 
-## License
+# License
 The code in this project is licensed under MIT license.
 
 Copyright (c) 2021 Leonard DeMarco.
